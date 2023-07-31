@@ -8,13 +8,16 @@
       <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
     
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center content-center">
       
-      <div class="p-10 mr-5 ml-5 border border-red-500 h-screen">
-        <div class="border border-white">
+      <div class="p-10 mr-5 ml-5 border border-red-500 h-screen flex flex-col justify-center content-center">
+        <div class="flex-col border border-blue-400 content-center">
           <h2 class="whitespace-nowrap font-mono text-xl font-bold text-white animate-typing text-left">Hi! I'm</h2>
           <h1 class="text-6xl text-center justify-center text-white font-abril"> Beverly Coronel</h1>
           <p class=" text-gray-300">Get to know me </p>
+        </div>
+        <div class="border">
+          Hi
         </div>
       </div>
 
