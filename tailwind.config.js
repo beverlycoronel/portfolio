@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        abril: ['Abril Fatface', 'sans-serif'],
+      },
       animation: {
         typing: "typing 2s steps(14), blink 0.1s infinite"
       },
