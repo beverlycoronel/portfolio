@@ -36,12 +36,12 @@
         </p>
       </div>
       
-      <div class="m-5 p-10 mr-15 ml-15 border border-solid border-red-400">
+      <div class="px-8 border border-solid border-red-400">
         <h1 id="projects" class="text-white font-bold text-3xl "> Projects </h1>
         <p class="text-white">
           I'm a Computer Science masters student at Georgia Tech. 
         </p>
-        <div class="m-0">
+        <div class="grid grid-cols-3 gap-8 mr-0 ml-0 mt-20 max-w-none auto-rows-fr ">
           <Project v-bind="websiteProps"></Project>       
           <Project v-bind="appProps"></Project>
           <Project v-bind="testProps">

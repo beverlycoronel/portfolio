@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         abril: ['Abril Fatface', 'sans-serif'],
       },
+      aspectRatio: {
+        '3/2': '3 / 2',
+      },
       animation: {
         typing: "typing 2s steps(14), blink 0.1s infinite"
       },
