@@ -1,3 +1,5 @@
+const { h } = require('vue');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,7 +15,10 @@ module.exports = {
         '3/2': '3 / 2',
       },
       animation: {
-        typing: "typing 2s steps(14), blink 0.1s infinite"
+        'pulse-normal': 'pulse 4s linear infinite',
+        'pulse-slow': 'pulse 5s linear infinite',
+        'pulse-slower': 'pulse 6s linear infinite',
+
       },
       keyframes: {
         typing: {
@@ -23,7 +28,8 @@ module.exports = {
         blink: {
           from: { "border-right-color": "transparent" },
           to: { "border-right-color": "black" },
-        }
+        },
+
       },
     },
   },
