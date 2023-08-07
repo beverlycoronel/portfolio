@@ -158,20 +158,20 @@ const mobileMenuOpen = ref(false)
 
 const websiteProps = 
 {projectTitle: "Bites", 
-projectImage: "millie.jpg", 
+projectImage: "bites.jpg", 
 projectTechnologies: ["NextJS", "Typescript", "Other"],
 projectDescription: "This is a test project description about the website project. This is a test project description about the website project. "};
 
 const appProps = 
 {projectTitle: "Hearts", 
-projectImage: "millie.jpg",
+projectImage: "date.jpg",
 projectTechnologies: ["Swift", "Firebase"],
 projectDescription: "This is a test project description for the iOS project. There will be much more text so I have to be prepared to handle as much as possible. \
 It should be short but not as short so I am not sure how it's going to go"};
 
 const terminalProps = 
 {projectTitle: "Terminal", 
-projectImage: "millie.jpg",
+projectImage: "terminal.jpg",
 projectTechnologies: ["Tech1"],
 projectDescription: "\
 A full-stack project for something to do something else. Built with something and something else, \
@@ -180,7 +180,7 @@ but I am not sure how much something to something"};
 
 const anchorProps = 
 {projectTitle: "Anchor", 
-projectImage: "millie.jpg",
+projectImage: "news.jpg",
 projectTechnologies: ["ReactJS"],
 projectDescription: "\
 A full-stack project for something to do something else. Built with something and something else, \
