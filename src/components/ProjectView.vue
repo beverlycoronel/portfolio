@@ -9,14 +9,14 @@
 
 </script>
 <template>
-    <div class="relative isolate flex flex-col w-full  text-white">
-        <div class="relative isolate flex flex-col oveflow-hidden rounded-2xl bg-gray-200/[1.0] text-white">
-            <img class="object-cover h-64" :src="projectImage">
+    <div class="relative isolate rounded-xl flex flex-col w-full ring-1 ring-gray-400/10 text-white">
+        <div class="relative isolate flex flex-col oveflow-hidden rounded-xl ring-1 ring-gray-400/10 bg-gray-200/[1.0] text-white">
+            <img class="object-cover h-64 rounded-xl shadow-xl " :src="projectImage">
         </div>
         <div class="absolute inset-0 z-0 bg-gradient-to-t from-gray-900 "></div>
         <div class="absolute inset-0 z-0 "></div>
         <div class="flex flex-wrap content-center gap-1 overflow-hidden leading-6 decoration-white[1.0]">
-            <time datetime="2020-03-16" class="m-2 text-white">Mar 16, 2020</time>
+            <h2> {{ projectTitle }}</h2>
         </div>
         <h3 >
             <a href="#">
