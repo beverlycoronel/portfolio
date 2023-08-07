@@ -1,29 +1,22 @@
-<script>
-// function getImageUrl() {
-//         return new URL(`./assets/${props.projectImage}`)
-// };
+<script setup lang="ts">
 
-export default {
-    name: "ProjectCont", 
-    props: {
-        projectTitle: String,
-        projectImage: String,
-        projectDescription: String,
-    },
-    methods: {
-        getImageUrl: function() {
-            return "../public/millie.jpg"
-        }
-    }
-      
-};
+function getImageUrl() {
+    return "../public/millie.jpg";
+  };
+
+  defineProps<{
+  projectTitle: String,
+  projectImage: String,
+  projectTechnologies: Array<String>,
+  projectDescription: String,
+    }>();
 
 
 </script>
 <template>
-    <div class="relative isolate flex flex-col w-full m-3 text-white border border-solid border-pink-300">
-        <div class="relative isolate flex flex-col oveflow-hidden rounded-2xl bg-gray-200/[1.0] px-8 p-8 w-full m-3 text-white border border-solid border-pink-300">
-            <img class="block object-cover w-full h-full aspect-square" :src="getImageUrl()">
+    <div class="relative isolate flex flex-col w-full text-white">
+        <div class="relative isolate flex flex-col oveflow-hidden rounded-2xl bg-gray-200/[1.0] text-white border-4 border-pink-500">
+            <img class="object-cover h-64" :src="getImageUrl()">
         </div>
         <div class="absolute inset-0 z-0 bg-gradient-to-t from-gray-900 "></div>
         <div class="absolute inset-0 z-0 border-2 ring-1 ring-offset-2"></div>

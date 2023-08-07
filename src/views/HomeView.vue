@@ -105,11 +105,15 @@
         <p class="text-white">
           I'm a Computer Science masters student at Georgia Tech. 
         </p>
-        <div class="grid grid-cols-1 gap-8 mr-0 ml-0 mt-20 max-w-none auto-rows-fr sm:grid-cols-2 lg:grid-cols-4 ">
-          <Project v-bind="websiteProps"></Project>       
-          <Project v-bind="appProps"></Project>
-          <Project v-bind="terminalProps"></Project>
-          <Project v-bind="anchorProps"></Project>
+        
+        <div class="h-max-96 grid grid-cols-1 gap-8 mr-0 ml-0 mt-20 max-w-none auto-rows-fr ">
+          <ProjectView v-bind="websiteProps"></ProjectView>      
+        </div>
+
+        <div class="h-max-96 grid grid-cols-1 gap-8 mr-0 ml-0 mt-20 max-w-none auto-rows-fr sm:grid-cols-2 lg:grid-cols-3 ">   
+          <ProjectView v-bind="appProps"></ProjectView>
+          <ProjectView v-bind="terminalProps"></ProjectView>
+          <ProjectView v-bind="anchorProps"></ProjectView>
         </div>
         
       </div>
@@ -138,7 +142,7 @@
   
 <script setup>
 
-import Project from '../components/Project.vue'
+import ProjectView from '../components/ProjectView.vue'
 import ProjectInfo from '../components/ProjectInfo.vue'
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
@@ -155,17 +159,20 @@ const mobileMenuOpen = ref(false)
 const websiteProps = 
 {projectTitle: "Bites", 
 projectImage: "millie.jpg", 
+projectTechnologies: ["NextJS", "Typescript", "Other"],
 projectDescription: "This is a test project description about the website project. This is a test project description about the website project. "};
 
 const appProps = 
 {projectTitle: "Hearts", 
 projectImage: "millie.jpg",
+projectTechnologies: ["Swift", "Firebase"],
 projectDescription: "This is a test project description for the iOS project. There will be much more text so I have to be prepared to handle as much as possible. \
 It should be short but not as short so I am not sure how it's going to go"};
 
 const terminalProps = 
 {projectTitle: "Terminal", 
 projectImage: "millie.jpg",
+projectTechnologies: ["Tech1"],
 projectDescription: "\
 A full-stack project for something to do something else. Built with something and something else, \
 this does something with something that allows something to do something. If something then something \
@@ -174,6 +181,7 @@ but I am not sure how much something to something"};
 const anchorProps = 
 {projectTitle: "Anchor", 
 projectImage: "millie.jpg",
+projectTechnologies: ["ReactJS"],
 projectDescription: "\
 A full-stack project for something to do something else. Built with something and something else, \
 this does something with something that allows something to do something. If something then something \
