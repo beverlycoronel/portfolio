@@ -14,6 +14,7 @@
         </div>
       </nav>
     </header>
+    
 
     <!-- content -->
     <div class="overflow-hidden isolate px-6 lg:px-8">
@@ -104,15 +105,20 @@
         <p class="text-white">
           I'm a Computer Science masters student at Georgia Tech. 
         </p>
-        <div class="grid grid-cols-2 gap-8 mr-0 ml-0 mt-20 max-w-none auto-rows-fr ">
+        <div class="grid grid-cols-1 gap-8 mr-0 ml-0 mt-20 max-w-none auto-rows-fr sm:grid-cols-2 lg:grid-cols-4 ">
           <Project v-bind="websiteProps"></Project>       
           <Project v-bind="appProps"></Project>
-          <Project v-bind="terminalProps">
-            Info about it
-          </Project>
+          <Project v-bind="terminalProps"></Project>
           <Project v-bind="anchorProps"></Project>
         </div>
         
+      </div>
+
+      <div class="border border-red-400 pt-24 px-5 mx-5 pb-5">
+        <ProjectInfo v-bind="websiteProps"></ProjectInfo>
+        <ProjectInfo v-bind="appProps"></ProjectInfo>
+        <ProjectInfo v-bind="terminalProps"></ProjectInfo>
+
       </div>
       
       <!-- contact -->
@@ -133,6 +139,7 @@
 <script setup>
 
 import Project from '../components/Project.vue'
+import ProjectInfo from '../components/ProjectInfo.vue'
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
