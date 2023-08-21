@@ -4,6 +4,9 @@
   projectImage: string,
   projectTechnologies: Array<String>,
   projectDescription: String,
+  projectHighlightOne: String,
+  projectHighlightTwo: String,
+  projectHighlightThree: String,
     }>();
 
 
@@ -20,7 +23,7 @@
         </div>
         <h3 >
             <a href="#">
-                <span> "Boost your conversion rate"</span>
+                <span> ------- </span>
             </a>
         </h3>
 

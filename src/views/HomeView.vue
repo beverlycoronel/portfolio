@@ -139,7 +139,7 @@
       <div class=" border-red-400 pt-24 px-5 mx-5 pb-5">
         <ProjectInfo v-bind="websiteProps"></ProjectInfo>
         <ProjectInfo v-bind="appProps"></ProjectInfo>
-        <ProjectInfo v-bind="terminalProps"></ProjectInfo>
+        <!-- <ProjectInfo v-bind="terminalProps"></ProjectInfo> -->
         <ProjectInfo v-bind="anchorProps"></ProjectInfo>
         
       </div>
@@ -179,15 +179,22 @@ const mobileMenuOpen = ref(false)
 const websiteProps = 
 {projectTitle: "Bites", 
 projectImage: "bites.jpg", 
-projectTechnologies: ["NextJS", "Typescript", "Other"],
-projectDescription: "This is a test project description about the website project. This is a test project description about the website project. "};
+projectTechnologies: ["NextJS", "Typescript"],
+projectDescription: "A website to recommend restaurants based on cuisine preferences.",
+projectHighlightOne: "Decide what you want to eat with a simple quiz",
+projectHighlightTwo: "Get restaurant recommendations near you based on your cuisine preference or quiz results",
+projectHighlightThree: "Still unsure? Get recommendations for popular new restaurants in your area"
+};
 
 const appProps = 
 {projectTitle: "Hearts", 
 projectImage: "date.jpg",
 projectTechnologies: ["Swift", "Firebase"],
-projectDescription: "This is a test project description for the iOS project. There will be much more text so I have to be prepared to handle as much as possible. \
-It should be short but not as short so I am not sure how it's going to go"};
+projectDescription: "An iOS application that facilitates the planning of dates with loved ones and friends.",
+projectHighlightOne: "Search and get recommendations for fun activities near you with MapKit API.",
+projectHighlightTwo: "Add images from your iOS device with help from PhotoKit framework, which are safely stored and retrieved from Firebase Storage.",
+projectHighlightThree: "Add your significant other and friends to your date via invite link"
+};
 
 const terminalProps = 
 {projectTitle: "Terminal", 
@@ -196,16 +203,22 @@ projectTechnologies: ["Tech1"],
 projectDescription: "\
 A full-stack project for something to do something else. Built with something and something else, \
 this does something with something that allows something to do something. If something then something \
-but I am not sure how much something to something"};
+but I am not sure how much something to something",
+projectHighlightOne: "1",
+projectHighlightTwo: "2",
+projectHighlightThree: "3"
+};
 
 const anchorProps = 
 {projectTitle: "Anchor", 
 projectImage: "news.jpg",
-projectTechnologies: ["ReactJS"],
+projectTechnologies: ["ReactJS", "Express", "Python"],
 projectDescription: "\
-A full-stack project for something to do something else. Built with something and something else, \
-this does something with something that allows something to do something. If something then something \
-but I am not sure how much something to something"};
+A 6-person capstone project news website that filters and compares articles from different popular sources based on political bias. My role was frontend developer.",
+projectHighlightOne: "Compare articles for political bias across multiple sources such as CNN, Fox News, and New York Post",
+projectHighlightTwo: "View each article's objectivity (objective or subjective) and sentiment (negative or positive) rating",
+projectHighlightThree: "Identify which sentences in an article are more left-learning or more right-leaning."
+};
 
 
 </script>
