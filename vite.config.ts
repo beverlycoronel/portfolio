@@ -8,7 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
   build: {
     rollupOptions: {
-      external: ["nala.jpg"]
+      external: ['nala.jpg']
     }
   },
   plugins: [
@@ -22,5 +22,6 @@ export default defineConfig({
   },
   server: {
     host: true
-  }
+  },
+  base: './'
 })
