@@ -5,9 +5,9 @@
     <header class="fixed inset-x-0 top-0 z-50  ">
       <nav class="flex items-center justify-between p-6 lg:px-8 bg-gray-900 bg-opacity-50" aria-label="Global">
         <div class="flex lg:flex-1 ">
-          <a href="#" class="-m-1 p-1">
-            <img class="h-8 w-auto rounded-2xl" src="nala.jpg" alt="" />
-          </a>
+          <!-- <a href="#" class="-m-1 p-1">
+            <img class="h-8 w-auto rounded-2xl" src="/public/nala.jpg" alt="" />
+          </a> -->
         </div>
         <div class="flex gap-x-10 opacity-100">
           <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</a>
