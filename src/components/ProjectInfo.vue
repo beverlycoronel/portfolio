@@ -18,6 +18,7 @@
                 </div>
                 
               </dl>
+              <p class="mt-6 text-md leading-8 text-gray-100"> Demo link coming soon! </p>
             </div>
           </div>
           <img :src="projectImage" alt="Project picture" class="w-[48rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
