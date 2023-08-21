@@ -6,6 +6,11 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      external: ["nala.jpg"]
+    }
+  },
   plugins: [
     vue(),
     vueJsx(),

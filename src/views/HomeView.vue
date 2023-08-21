@@ -160,7 +160,7 @@
 
 </template>
   
-<script setup>
+<script lang="ts" setup>
 
 import ProjectView from '../components/ProjectView.vue'
 import ProjectInfo from '../components/ProjectInfo.vue'
