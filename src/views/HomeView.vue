@@ -37,8 +37,8 @@
         </div>
 
 
-      <div class="border-2 md:px-12 lg:px-36 overscroll-contain xl:px-36 2xl:px-48 sm:border-teal-500 md:border-yellow-500 lg:border-emerald-500 xl:border-pink-500 2xl:border-green-500">
-
+      <!-- <div class="border-2 md:px-12 lg:px-36 overscroll-contain xl:px-36 2xl:px-48 sm:border-teal-500 md:border-yellow-500 lg:border-emerald-500 xl:border-pink-500 2xl:border-green-500"> -->
+        <div class=" md:px-12 lg:px-36 overscroll-contain xl:px-36 2xl:px-48">
         <!-- home screen with name and short description -->
         <div class="flex flex-col inset-0 mx-auto max-w-full py-32 sm:py-48 lg:py-56 h-screen justify-center content-center ">
           <!-- hi i'm -->
@@ -50,7 +50,7 @@
         
         <div class="text-center">
           <h1 class="m-5 text-7xl font-bold tracking-tight text-gray-200 md:text-9xl">Beverly Coronel</h1>
-          <p class="m-10 mt-6 text-md sm:text-lg leading-8 text-gray-200">I'm a MS Computer Science student actively looking for entry-level/internship software engineering opportunities.</p>
+          <p class="m-10 mt-6 text-md sm:text-lg leading-8 text-gray-200">I'm a Computer Science grad student actively looking for entry-level/internship software engineering opportunities.</p>
           <div class="m-10 mt-10 flex items-center justify-center gap-x-6">
             <a href="#about" class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get to know me</a>
             <a href="#projects" class="text-sm font-semibold leading-6 text-gray-100">Skip to projects <span aria-hidden="true">→</span></a>
@@ -62,7 +62,10 @@
       <!-- about -->
       <div id="about" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5">
         <h1 class="text-white font-bold text-3xl"> About </h1>
-        <p class="text-white">
+        
+        <UnderMaintenance></UnderMaintenance>
+        
+        <!-- <p class="text-white">
           Hi there! I'm a Computer Science masters student currently attending Georgia Tech. I am currently on my second semester.
           Classes taken/in progress: 
           - Computer Networks
@@ -76,8 +79,8 @@
         </p>
         <p>Advanced Data Structures and Algorithms</p>
         <p>Software Engineering</p>
-        <p>Computer Graphics</p>
-        <div class="flex flex-row border-2 flex-1">
+        <p>Computer Graphics</p> -->
+        <!-- <div class="flex flex-row border-2 flex-1">
           <div class="border-2 flex-grow">One</div>
           <div class="border-2 flex-grow">Skills
             <h1>Skills</h1>
@@ -89,8 +92,8 @@
             <span>C</span>
           </div>
           
-        </div>
-        <div class="flex flex-row border-2 flex-1">
+        </div> -->
+        <!-- <div class="flex flex-row border-2 flex-1">
           <div class="border-2 flex-grow">One</div>
           <div class="border-2 flex-grow">Skills
             <h1>Skills</h1>
@@ -102,8 +105,8 @@
             <span>C</span>
           </div>
           
-        </div>
-        <p class="text-white">
+        </div> -->
+        <!-- <p class="text-white">
           Hi there! I'm a Computer Science masters student currently attending Georgia Tech. I am currently on my second semester.
           Classes taken/in progress: 
           - Computer Networks
@@ -112,18 +115,18 @@
         <p>Computer Networks </p>
         <p>Graduate Operating Systems</p>
         <p>Whatever else I am taking</p>
-        <p>-</p>
+        <p>-</p> -->
       </div>
       
       
       <!-- projects -->
       <div id="projects" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5">
         <h1 class="text-white font-bold text-3xl "> Projects </h1>
-        <p class="text-white">
-          I'm a Computer Science masters student at Georgia Tech. 
-        </p>
+        <!-- <p class="text-white">
+          - 
+        </p> -->
         
-        <div class="h-max-96 grid grid-cols-1 gap-8 mr-0 ml-0 mt-5 max-w-none auto-rows-fr ">
+        <!-- <div class="h-max-96 grid grid-cols-1 gap-8 mr-0 ml-0 mt-5 max-w-none auto-rows-fr ">
           <ProjectView v-bind="websiteProps"></ProjectView>      
         </div>
         
@@ -132,11 +135,11 @@
           <ProjectView v-bind="appProps"></ProjectView>
           <ProjectView v-bind="terminalProps"></ProjectView>
           <ProjectView v-bind="anchorProps"></ProjectView>
-        </div>
+        </div> -->
         
       </div>
       
-      <div class=" border-red-400 pt-24 px-5 mx-5 pb-5">
+      <div class=" border-red-400 pt-0 px-5 mx-5 pb-5">
         <ProjectInfo v-bind="websiteProps"></ProjectInfo>
         <ProjectInfo v-bind="appProps"></ProjectInfo>
         <!-- <ProjectInfo v-bind="terminalProps"></ProjectInfo> -->
@@ -147,9 +150,7 @@
       <!-- contact -->
       <div id="contact" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5 h-screen">
         <h1 class="text-white font-bold text-3xl"> Contact </h1>
-        <p class="text-white">
-          I'm a Computer Science masters student at Georgia Tech. 
-        </p>
+        <UnderMaintenance></UnderMaintenance>
       </div>
       
     </div>
@@ -164,6 +165,7 @@
 
 import ProjectView from '../components/ProjectView.vue'
 import ProjectInfo from '../components/ProjectInfo.vue'
+import UnderMaintenance from '../components/UnderMaintenance.vue'
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
