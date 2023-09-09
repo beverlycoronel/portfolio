@@ -44,13 +44,13 @@
           <!-- hi i'm -->
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Hi! I'm 
+            Hi! I'm  
           </div>
         </div>
         
         <div class="text-center">
           <h1 class="m-5 text-7xl font-bold tracking-tight text-gray-200 md:text-9xl">Beverly Coronel</h1>
-          <p class="m-10 mt-6 text-md sm:text-lg leading-8 text-gray-200">I'm a Computer Science grad student actively looking for entry-level/internship software engineering opportunities.</p>
+          <p class="m-10 mt-6 text-md sm:text-lg leading-8 text-gray-200">I'm a Computer Science grad student at Georgia Tech actively looking for entry-level/internship SWE opportunities.</p>
           <div class="m-10 mt-10 flex items-center justify-center gap-x-6">
             <a href="#about" class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get to know me</a>
             <a href="#projects" class="text-sm font-semibold leading-6 text-gray-100">Skip to projects <span aria-hidden="true">→</span></a>
@@ -61,7 +61,7 @@
       
       <!-- about -->
       <div id="about" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5">
-        <h1 class="text-white font-bold text-3xl"> About </h1>
+        <h1 class="text-white font-bold text-5xl"> About </h1>
         
         <UnderMaintenance></UnderMaintenance>
         
@@ -121,7 +121,7 @@
       
       <!-- projects -->
       <div id="projects" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5">
-        <h1 class="text-white font-bold text-3xl "> Projects </h1>
+        <h1 class="text-white font-bold text-5xl "> Projects </h1>
         <!-- <p class="text-white">
           - 
         </p> -->
@@ -148,9 +148,9 @@
       </div>
       
       <!-- contact -->
-      <div id="contact" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5 h-screen">
-        <h1 class="text-white font-bold text-3xl"> Contact </h1>
-        <UnderMaintenance></UnderMaintenance>
+      <div id="contact" class=" border-solid border-red-400 pt-24 px-5 mx-5 h-screen w-auto">
+        <h1 class="text-white font-bold text-5xl"> Contact </h1>
+        <ContactView></ContactView>
         <!-- <a target="_blank" href="https://icons8.com/icon/UFs0fMK31QCj/b-key">letter b</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
       </div>
       
@@ -167,6 +167,7 @@
 import ProjectView from '../components/ProjectView.vue'
 import ProjectInfo from '../components/ProjectInfo.vue'
 import UnderMaintenance from '../components/UnderMaintenance.vue'
+import ContactView from '../components/ContactView.vue'
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
