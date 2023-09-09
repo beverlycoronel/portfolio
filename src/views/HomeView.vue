@@ -151,6 +151,7 @@
       <div id="contact" class=" border-solid border-red-400 pt-24 px-5 mx-5 pb-5 h-screen">
         <h1 class="text-white font-bold text-3xl"> Contact </h1>
         <UnderMaintenance></UnderMaintenance>
+        <!-- <a target="_blank" href="https://icons8.com/icon/UFs0fMK31QCj/b-key">letter b</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
       </div>
       
     </div>
