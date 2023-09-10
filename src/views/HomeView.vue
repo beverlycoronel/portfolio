@@ -12,7 +12,9 @@
         <div class="flex gap-x-10 opacity-100">
           <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</a>
         </div>
+         
       </nav>
+      <AnnouncementView id="announcement"></AnnouncementView>
     </header>
     
 
@@ -21,11 +23,12 @@
 
       <!-- first background color upper -->
       <div class="blur-3xl border-4 border-pink-500 absolute inset-x-0 m-0 p-0 -top-40 -z-10 transform-gpu overflow-hidden " aria-hidden="true">
-        <div class="animate-pulse-normal relative m-0 p-0 left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#6f2e49] to-[#a06cf4] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+       <!-- animate pulse normal -->
+        <div class="relative m-0 p-0 left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#6f2e49] to-[#a06cf4] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>     
-      <!-- second background color left --> 
+      <!-- second background color left (pulse slow rel) --> 
       <div class="blur-3xl border-4 border-pink-500 hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu " aria-hidden="true">
-        <div class="animate-pulse-slow relative aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#f01772] to-[#776fff] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+        <div class=" relative aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#f01772] to-[#776fff] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
       <!-- third background color right -->
       <!-- <div class="border-4 border-pink-500 absolute -top-50 left-1/2 -z-10 -translate-x-1/2 transform-gpu sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
@@ -33,7 +36,7 @@
         </div> -->
         <!-- fourth background color down -->
         <div class="blur-3xl absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden sm:top-[calc(100%-39rem)]" aria-hidden="true">
-          <div class="animate-pulse-slower relative left-[calc(100%-3rem)] aspect-[1155/678] w-[30.125rem] -translate-x-3/4 bg-gradient-to-tr from-[#e62c79] to-[#4d42e3] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 94.1% 44.1%)"></div>
+          <div class=" relative left-[calc(100%-3rem)] aspect-[1155/678] w-[30.125rem] -translate-x-3/4 bg-gradient-to-tr from-[#e62c79] to-[#4d42e3] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 94.1% 44.1%)"></div>
         </div>
 
 
@@ -164,13 +167,13 @@
   
 <script lang="ts" setup>
 
-import ProjectView from '../components/ProjectView.vue'
+// import ProjectView from '../components/ProjectView.vue'
 import ProjectInfo from '../components/ProjectInfo.vue'
 import UnderMaintenance from '../components/UnderMaintenance.vue'
 import ContactView from '../components/ContactView.vue'
+import AnnouncementView from '../components/AnnouncementView.vue'
+
 import { ref } from 'vue'
-import { Dialog, DialogPanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'About', href: '#about' },
@@ -178,7 +181,16 @@ const navigation = [
   { name: 'Contact', href: '#contact' },
 ]
 
-const mobileMenuOpen = ref(false)
+var button = document.getElementById("button")
+  button?.addEventListener("click", () => {
+    hide()
+  })
+  function hide() { 
+    var e = document.getElementById("announcement");
+    if (e) 
+        e.style.display = 'none'
+       
+  }
 
 const websiteProps = 
 {projectTitle: "Bites", 
