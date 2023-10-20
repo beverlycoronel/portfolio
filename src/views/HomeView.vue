@@ -20,9 +20,9 @@
     <!-- content -->
     <div class="overflow-hidden isolate">
       <div class="absolute flex min-w-full max-w-full -z-10 h-screen object-cover bg-black">
-        <!-- <video class="relative flex object-cover min-w-full" data-autoplay autoplay playsinline loop muted> -->
-            <!-- <source src="/videos/video-by-engin.mp4" type="video/mp4"> -->
-        <!-- </video> -->
+        <video class="relative flex object-cover min-w-full" data-autoplay autoplay playsinline loop muted>
+            <source src="https://bev-portfolio-bucket.s3.amazonaws.com/video-by-engin.mp4" type="video/mp4">
+        </video>
 
       </div>
       <div class=" md:px-12 lg:px-36 overscroll-contain xl:px-36 2xl:px-48">
