@@ -7,9 +7,9 @@
       <body class="h-full">
       ```
     -->
-    <div class="min-h-full">
+    <div class="min-h-full min-w-full">
     <!-- <img src="https://images.unsplash.com/photo-1545972154-9bb223aac798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=3050&amp;q=80&amp;exp=8&amp;con=-15&amp;sat=-75" alt="" class="w-full h-full relative -z-10 inset-0"> -->
-    <main class="grid h-full place-items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+    <main class="grid h-full place-items-center bg-black px-6 py-24 sm:py-32 lg:px-8">
     
       <div class="text-center relative">
         <p class="text-base font-semibold text-indigo-600">404</p>

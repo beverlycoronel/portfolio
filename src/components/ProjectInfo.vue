@@ -5,11 +5,11 @@
           <div class="lg:pr-8 lg:pt-4">
             <div class="lg:max-w-lg">
               <h2 class="text-base font-bold leading-7 text-indigo-500"> {{ projectTechnologies.join(" / ") }}</h2>
-              <p class="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl"> {{ projectTitle }} </p>
-              <p class="mt-6 text-lg leading-8 text-gray-100"> {{ projectDescription }} </p>
-              <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-100 lg:max-w-none">
+              <p class="mt-2 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl"> {{ projectTitle }} </p>
+              <p class="mt-6 text-lg leading-8 text-gray-800"> {{ projectDescription }} </p>
+              <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-700 lg:max-w-none">
                 <div v-for="feature in features" :key="feature.name" class="relative pl-9">
-                  <dt class="inline font-semibold text-gray-100">
+                  <dt class="inline font-semibold text-gray-800">
                     <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
                     {{ feature.name }}
                   </dt>
@@ -18,7 +18,7 @@
                 </div>
                 
               </dl>
-              <p class="mt-6 text-md leading-8 text-gray-100"> Demo link coming soon! </p>
+              <p class="mt-6 text-md leading-8 text-gray-800"> Demo link coming soon! </p>
             </div>
           </div>
           <img :src="projectImage" alt="Project picture" class="w-[48rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />

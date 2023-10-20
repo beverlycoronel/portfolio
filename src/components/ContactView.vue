@@ -1,6 +1,6 @@
 <template>
     <div class="flex">
-    <main class="grid h-full bg-gray-900 py-4 gap-y-5">
+    <main class="grid h-full py-4 gap-y-5">
 
       <div class="grid grid-cols-2 items-center gap-y-3">
         <a href="https://www.linkedin.com/in/beverlycoronel"><img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/></a>
