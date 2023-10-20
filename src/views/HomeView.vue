@@ -7,6 +7,9 @@
         <div class="flex lg:flex-1 ">
         </div>
         <div class="flex gap-x-10 opacity-100">
+          <router-link to="/about">
+            <p class="text-sm font-semibold leading-6 text-gray-100">About</p>
+          </router-link>
           <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</a>
         </div>       
       </nav>
@@ -16,17 +19,20 @@
 
     <!-- content -->
     <div class="overflow-hidden isolate">
-      <div class="absolute flex min-w-full max-w-full -z-10 h-screen object-cover">
-        <video class="relative flex object-cover min-w-full" data-autoplay autoplay playsinline loop muted>
-            <source src="/videos/video-by-engin.mp4" type="video/mp4">
-        </video>
+      <div class="absolute flex min-w-full max-w-full -z-10 h-screen object-cover bg-black">
+        <!-- <video class="relative flex object-cover min-w-full" data-autoplay autoplay playsinline loop muted> -->
+            <!-- <source src="/videos/video-by-engin.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+
       </div>
       <div class=" md:px-12 lg:px-36 overscroll-contain xl:px-36 2xl:px-48">
         <div class="flex flex-col inset-0 mx-auto max-w-full py-32 sm:py-48 lg:py-56 h-screen justify-center content-center ">
           <div class="text-left">
             <h1 class="m-5 text-7xl font-bold tracking-tight text-gray-200 md:text-8xl">hi, i'm bev</h1>
             <div class="m-10 mt-10 flex items-center gap-x-6">
-              <a href="/about" class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get to know me</a>
+              <router-link to="/about">
+                <p class="rounded-md bg-pink-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get to know me</p>
+              </router-link>
               <a href="#projects" class="text-sm font-semibold leading-6 text-gray-100"> Skip to projects <span aria-hidden="true">→</span></a>
             </div>
           </div>
@@ -69,7 +75,6 @@ import AnnouncementView from '../components/AnnouncementView.vue'
 import { ref } from 'vue'
 
 const navigation = [
-  { name: 'About', href: '/about' },
   { name: 'Projects', href: '/#projects' },
   { name: 'Contact', href: '/#contact' },
 ]
