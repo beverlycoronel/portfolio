@@ -20,8 +20,8 @@
     <!-- content -->
     <div class="overflow-hidden isolate">
       <div class="absolute flex min-w-full max-w-full -z-10 h-screen object-cover bg-black">
-        <video class="relative flex object-cover min-w-full" data-autoplay autoplay webkit-autoplay playsinline webkit-playsinline loop muted>
-            <source src="https://bev-portfolio-bucket.s3.amazonaws.com/colors-engin.mp4" type="video/mp4">
+        <video id="vid" class="relative flex object-cover min-w-full" data-autoplay autoplay webkit-autoplay playsinline webkit-playsinline loop muted>
+            <source id="vid" src="https://bev-portfolio-bucket.s3.amazonaws.com/colors-engin.mp4" type="video/mp4">
         </video>
 
       </div>
@@ -68,27 +68,32 @@
 
 // import ProjectView from '../components/ProjectView.vue'
 import ProjectInfo from '../components/ProjectInfo.vue'
-// import UnderMaintenance from '../components/UnderMaintenance.vue'
 import ContactView from '../components/ContactView.vue'
 import AnnouncementView from '../components/AnnouncementView.vue'
-
-import { ref } from 'vue'
+import { onMounted } from 'vue';
+// import { ref } from 'vue'
+onMounted(() => {
+  const vid = document.getElementById("vid") as HTMLMediaElement;
+  vid.playbackRate = 0.75;
+})
 
 const navigation = [
   { name: 'Projects', href: '/#projects' },
   { name: 'Contact', href: '/#contact' },
 ]
 
-var button = document.getElementById("button")
-  button?.addEventListener("click", () => {
-    hide()
-  })
-  function hide() { 
-    var e = document.getElementById("announcement");
-    if (e) 
-        e.style.display = 'none'
-       
-  }
+var button = document.getElementById("button");
+button?.addEventListener("click", () => {
+  hide()
+})
+function hide() { 
+  var e = document.getElementById("announcement");
+  if (e) 
+  e.style.display = 'none'
+
+}
+
+// vid.playbackRate = 0.5;
 
 const websiteProps = 
 {projectTitle: "Bites", 

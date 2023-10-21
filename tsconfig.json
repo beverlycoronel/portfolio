@@ -1,4 +1,12 @@
 {
+  "compilerOptions": {
+    "lib": [
+      "ES5",
+      "ES6",
+      "DOM"
+    ]
+  },
+  "strict": false,
   "files": [],
   "references": [
     {
