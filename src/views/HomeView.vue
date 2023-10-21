@@ -20,7 +20,7 @@
     <!-- content -->
     <div class="overflow-hidden isolate">
       <div class="absolute flex min-w-full max-w-full -z-10 h-screen object-cover bg-black">
-        <video class="relative flex object-cover min-w-full" data-autoplay autoplay playsinline loop muted>
+        <video class="relative flex object-cover min-w-full" data-autoplay autoplay webkit-autoplay playsinline webkit-playsinline loop muted>
             <source src="/public/videos/colors.mp4" type="video/mp4">
         </video>
 
