@@ -1,15 +1,5 @@
 <template>
   <div class="overflow-hidden isolate">
-    <header class="fixed inset-x-0 top-0 z-50  ">
-      <nav class="flex items-center justify-between p-6 lg:px-8 bg-gray-900 bg-opacity-50" aria-label="Global">
-        <div class="flex lg:flex-1 ">
-        </div>
-        <div class="flex gap-x-10 opacity-100">
-          <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</a>
-        </div>       
-      </nav>
-      <AnnouncementView id="announcement"></AnnouncementView>
-    </header>
     <div class="absolute flex min-w-full max-w-full h-screen object-cover">
       <UnderMaintenance></UnderMaintenance>
     </div>
@@ -49,14 +39,8 @@
 </template>
 
 <script lang="ts" setup>
-const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/#projects' },
-  { name: 'Contact', href: '#contact' },
-]
 import UnderMaintenance from '../components/UnderMaintenance.vue'
-import AnnouncementView from '../components/AnnouncementView.vue'
 
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
 </script>
