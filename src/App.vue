@@ -24,7 +24,7 @@ const navigation = [
         <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</a>
       </div>       
     </nav>
-    <AnnouncementView id="announcement"></AnnouncementView>
+    <!-- <AnnouncementView id="announcement"></AnnouncementView> -->
   </header>
   </div>
   <RouterView />
